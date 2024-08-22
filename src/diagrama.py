@@ -4,9 +4,9 @@ from diagrams.aws.database import ElastiCache, RDS
 from diagrams.aws.network import ELB, Route53, APIGateway
 from diagrams.aws.management  import Cloudwatch
 
-with Diagram("Meu Diagrama 003", show=False):
+with Diagram("Meu Diagrama 004", show=False):
     dns = Route53("dns")
-    lb = ELB("lb")
+    lb = ELB("lb") 
     api_gateway = APIGateway("API Gateway")
 
     with Cluster("Services"):
