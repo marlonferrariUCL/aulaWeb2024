@@ -4,15 +4,14 @@ from diagrams.aws.database import ElastiCache, RDS
 from diagrams.aws.network import ELB, Route53, APIGateway
 from diagrams.aws.management  import Cloudwatch
 
+<<<<<<< HEAD
 with Diagram("Meu Diagrama 001", show=False):
     dns = Route53("dns")
     lb = ELB("lb")
     api_gateway = APIGateway("API Gateway")
+=======
+>>>>>>> 9b76d3e (Remove lines)
 
-    with Cluster("Services"):
-        lambda_group = [Lambda("web1"),
-                        Lambda("web2"),
-                        Lambda("web3")]
 
     with Cluster("DB Cluster"):
         db_primary = RDS("userdb")
